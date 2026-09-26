@@ -38,7 +38,6 @@ Screenshot Sesudah
 
 ## Penjelasan 5 Bagian Kode Penting
 ### 1. Interface BisaDihitung
-
 ```php
 interface BisaDihitung
 {
@@ -49,10 +48,10 @@ interface BisaDihitung
 Interface digunakan untuk menentukan bahwa class yang menggunakannya harus memiliki method hargaAkhir().
 
 ### **2. Class Produk**
-
 class Produk implements BisaDihitung
 ```
 Class Produk digunakan untuk menyimpan data produk seperti nama dan harga. Class ini juga menerapkan interface BisaDihitung.
+```
 
 ### **3. Class ProdukDiskon**
 
