@@ -46,4 +46,4 @@ interface BisaDihitung
 }
 Interface digunakan untuk menentukan bahwa class yang menggunakannya harus memiliki method hargaAkhir().
 
-### 1. Class Produk
+### **2. Class Produk**
