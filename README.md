@@ -85,7 +85,8 @@ Folder repository belum berada di dalam folder htdocs milik XAMPP sehingga Apach
 **Perbaikan**
 
 Folder repository dipindahkan ke:
+
 C:\xampp\htdocs\
-```
+
 Setelah itu program dapat dijalankan melalui localhost dan menghasilkan output dengan normal.
 
