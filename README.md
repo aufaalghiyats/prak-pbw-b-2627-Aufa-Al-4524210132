@@ -71,15 +71,19 @@ return $this->harga * (1 - $this->diskon / 100);
 Kode tersebut digunakan untuk menghitung harga akhir produk setelah dikurangi persentase diskon.
 ```
 
-**Error yang Pernah Muncul**
-**Error: Not Found**
+## **Error yang Pernah Muncul**
+
+## **Error: Not Found**
 Saat pertama kali menjalankan program melalui localhost, muncul pesan:
 
 Not Found - The requested URL was not found on this server.
+
 **Penyebab**
+
 Folder repository belum berada di dalam folder htdocs milik XAMPP sehingga Apache tidak dapat menemukan file PHP yang ingin dijalankan.
 
 **Perbaikan**
+
 Folder repository dipindahkan ke:
 C:\xampp\htdocs\
 ```
