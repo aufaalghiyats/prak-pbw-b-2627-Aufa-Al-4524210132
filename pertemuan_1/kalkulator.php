@@ -29,6 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             break;
 
+        // MODIFIKASI 1: menambahkan operasi pangkat
+        case '**':
+            $hasil = $a ** $b;
+            break;
+
         default:
             $pesan = 'Operator tidak valid.';
     }
@@ -45,23 +50,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <h1>Kalkulator Sederhana</h1>
+
     <form method="post">
         <input type="number" step="any" name="a" required>
+
         <select name="operator">
-            <option>+</option>
-            <option>-</option>
-            <option>*</option>
-            <option>/</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+
+            <!-- MODIFIKASI 1 -->
+            <option value="**">Pangkat (**)</option>
         </select>
+
         <input type="number" step="any" name="b" required>
+
         <button type="submit">Hitung</button>
     </form>
 
     <?php if ($pesan): ?>
         <p><?= htmlspecialchars($pesan) ?></p>
+
     <?php elseif ($hasil !== null): ?>
-        <p>Hasil: <?= htmlspecialchars((string)$hasil) ?></p>
+        <p>Hasil: <?= htmlspecialchars((string) $hasil) ?></p>
     <?php endif; ?>
+
 </body>
 
 </html>

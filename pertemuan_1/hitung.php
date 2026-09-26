@@ -41,7 +41,10 @@ class ProdukDiskon extends Produk
 
 $daftar = [
     new Produk('Keyboard', 250000),
-    new ProdukDiskon('Mouse', 150000, 10)
+    new ProdukDiskon('Mouse', 150000, 10),
+
+    // MODIFIKASI 2: menambahkan produk Headset dengan diskon 15%
+    new ProdukDiskon('Headset', 300000, 15)
 ];
 
 foreach ($daftar as $produk) {
