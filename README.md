@@ -54,4 +54,34 @@ Class Produk digunakan untuk menyimpan data produk seperti nama dan harga. Class
 ```
 
 ### **3. Class ProdukDiskon**
+class ProdukDiskon extends Produk
+```
+Class ProdukDiskon merupakan turunan dari Produk dan digunakan untuk menghitung harga produk setelah mendapatkan diskon.
+```
+
+### **4. Switch pada Kalkulator**
+switch ($operator)
+```
+Bagian ini digunakan untuk menentukan operasi matematika yang dipilih oleh pengguna, seperti penjumlahan, pengurangan, perkalian, pembagian, dan pangkat.
+```
+
+### **5. Perhitungan Harga Setelah Diskon**
+return $this->harga * (1 - $this->diskon / 100);
+```
+Kode tersebut digunakan untuk menghitung harga akhir produk setelah dikurangi persentase diskon.
+```
+
+**Error yang Pernah Muncul**
+**Error: Not Found**
+Saat pertama kali menjalankan program melalui localhost, muncul pesan:
+
+Not Found - The requested URL was not found on this server.
+**Penyebab**
+Folder repository belum berada di dalam folder htdocs milik XAMPP sehingga Apache tidak dapat menemukan file PHP yang ingin dijalankan.
+
+**Perbaikan**
+Folder repository dipindahkan ke:
+C:\xampp\htdocs\
+```
+Setelah itu program dapat dijalankan melalui localhost dan menghasilkan output dengan normal.
 
