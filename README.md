@@ -54,3 +54,5 @@ class Produk implements BisaDihitung
 ```
 Class Produk digunakan untuk menyimpan data produk seperti nama dan harga. Class ini juga menerapkan interface BisaDihitung.
 
+### **3. Class ProdukDiskon**
+
