@@ -45,5 +45,7 @@ interface BisaDihitung
     public function hargaAkhir(): float;
 }
 Interface digunakan untuk menentukan bahwa class yang menggunakannya harus memiliki method hargaAkhir().
+````markdown
+### 2. CAF
 
-### **2. Class Produk**
+
