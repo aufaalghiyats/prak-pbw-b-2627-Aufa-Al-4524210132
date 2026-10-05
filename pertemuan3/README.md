@@ -1,13 +1,10 @@
 # Tugas 3 Praktikum PBW
 
-## Nama
-Aufa Al
+## Nama: Aufa Al Ghiyats Sulthan Priatmojo
 
-## NIM
-4524210132
+## NIM: 4524210132
 
-## Praktikum
-PBW B
+## Praktikum: PBW B
 
 ## Pertemuan 3
 
