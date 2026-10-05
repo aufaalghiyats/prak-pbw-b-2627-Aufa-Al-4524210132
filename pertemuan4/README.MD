@@ -136,7 +136,7 @@ Dengan cara tersebut, file PHP dapat dijalankan langsung melalui Terminal VS Cod
 
 ### Screenshot Sebelum Modifikasi
 
-<img width="1366" height="619" alt="WhatsApp Image 2026-10-05 at 12.14.51" src="">
+<img width="1366" height="619" alt="pertemuan4/WhatsApp Image 2026-10-05 at 12.14.51.jpeg" src="">
 
 ### Screenshot Sesudah Modifikasi
 
