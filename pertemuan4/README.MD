@@ -215,4 +215,4 @@ Dengan urutan tersebut, program terlebih dahulu mengubah data IPK, kemudian memb
 
 ### Screenshot Sesudah Modifikasi
 
-![image alt]
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/main/pertemuan4/sesudah2.png)
