@@ -141,3 +141,69 @@ Dengan cara tersebut, file PHP dapat dijalankan langsung melalui Terminal VS Cod
 ### Screenshot Sesudah Modifikasi
 
 ![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/main/pertemuan4/sesudah.png)
+
+### Contoh 2: UPDATE, SELECT, GROUP BY, dan DELETE
+
+Pada `contoh2.php`, program digunakan untuk melakukan beberapa operasi pada database `akademik`, yaitu mengubah data mahasiswa, menampilkan rekap mahasiswa berdasarkan prodi, melakukan verifikasi data, dan menghapus data mahasiswa.
+
+### 1. UPDATE Data Mahasiswa
+
+```php
+$sqlUpdate = "UPDATE mahasiswa SET ipk = 3.40 WHERE nim = '2025003'";
+```
+
+Kode tersebut digunakan untuk mengubah nilai IPK mahasiswa dengan NIM `2025003` menjadi **3.40**.
+
+### 2. SELECT dan GROUP BY
+
+```php
+$sqlRekap = "SELECT prodi, COUNT(*) AS jumlah, ROUND(AVG(ipk),2) AS rata_ipk
+             FROM mahasiswa
+             GROUP BY prodi
+             ORDER BY jumlah DESC";
+```
+
+Kode tersebut digunakan untuk membuat rekap jumlah mahasiswa dan rata-rata IPK berdasarkan program studi.
+
+`COUNT(*)` digunakan untuk menghitung jumlah mahasiswa, sedangkan `AVG(ipk)` digunakan untuk menghitung rata-rata IPK. `GROUP BY prodi` mengelompokkan data berdasarkan program studi.
+
+### 3. Verifikasi Data
+
+```php
+$sqlVerifikasi = "SELECT * FROM mahasiswa WHERE nim = '2025003'";
+```
+
+Kode tersebut digunakan untuk memeriksa apakah mahasiswa dengan NIM `2025003` terdapat di dalam database sebelum dilakukan penghapusan.
+
+Jika data ditemukan, program akan menampilkan NIM, nama, dan IPK mahasiswa.
+
+### 4. DELETE Data
+
+```php
+$sqlDelete = "DELETE FROM mahasiswa WHERE nim = '2025003'";
+```
+
+Kode tersebut digunakan untuk menghapus data mahasiswa dengan NIM `2025003` dari tabel `mahasiswa`.
+
+Penghapusan dilakukan setelah data berhasil diverifikasi terlebih dahulu.
+
+### 5. Menampilkan Hasil Query
+
+```php
+while ($row = mysqli_fetch_assoc($resultRekap)) {
+    echo "Prodi       : " . $row['prodi'] . "\n";
+    echo "Jumlah      : " . $row['jumlah'] . "\n";
+    echo "Rata-rata IPK: " . $row['rata_ipk'] . "\n";
+}
+```
+
+Kode tersebut digunakan untuk mengambil hasil query rekap satu per satu dan menampilkan nama prodi, jumlah mahasiswa, serta rata-rata IPK.
+
+### Alur Program
+
+Program berjalan dengan urutan:
+
+**UPDATE → REKAP DATA → VERIFIKASI DATA → DELETE**
+
+Dengan urutan tersebut, program terlebih dahulu mengubah data IPK, kemudian membuat rekap mahasiswa berdasarkan prodi, memeriksa data mahasiswa yang akan dihapus, dan terakhir menghapus data tersebut dari database.
+
