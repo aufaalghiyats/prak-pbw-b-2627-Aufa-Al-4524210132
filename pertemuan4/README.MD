@@ -136,7 +136,7 @@ Dengan cara tersebut, file PHP dapat dijalankan langsung melalui Terminal VS Cod
 
 ### Screenshot Sebelum Modifikasi
 
-![image alt]https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/main/pertemuan4/WhatsApp%20Image%202026-10-05%20at%2012.14.51.jpeg
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/main/pertemuan4/WhatsApp%20Image%202026-10-05%20at%2012.14.51.jpeg)
 
 ### Screenshot Sesudah Modifikasi
 
