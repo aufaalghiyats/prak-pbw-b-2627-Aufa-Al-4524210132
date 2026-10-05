@@ -140,4 +140,4 @@ Dengan cara tersebut, file PHP dapat dijalankan langsung melalui Terminal VS Cod
 
 ### Screenshot Sesudah Modifikasi
 
-<img width="1366" height="619" alt="Screenshot sesudah modifikasi" src="">
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/main/pertemuan4/sesudah.png)
