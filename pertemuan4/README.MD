@@ -207,3 +207,12 @@ Program berjalan dengan urutan:
 
 Dengan urutan tersebut, program terlebih dahulu mengubah data IPK, kemudian membuat rekap mahasiswa berdasarkan prodi, memeriksa data mahasiswa yang akan dihapus, dan terakhir menghapus data tersebut dari database.
 
+## Screenshot
+
+### Screenshot Sebelum Modifikasi
+
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/main/pertemuan4/sebelum2.png)
+
+### Screenshot Sesudah Modifikasi
+
+![image alt]
