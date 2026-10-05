@@ -8,71 +8,136 @@
 
 ## Pertemuan 4
 
-### Modifikasi 1: `tugascnth1.php`
+Pada tugas ini saya menjalankan Contoh 1 pada Pertemuan 4 dan melakukan modifikasi pada program untuk menampilkan data mahasiswa berdasarkan program studi dan IPK.
 
-Pada tugas ini dilakukan modifikasi pada file `tugascnth1.php` berdasarkan file `contoh1.php`.
+### Modifikasi 1: Menambahkan Filter Program Studi
 
-Modifikasi yang dilakukan adalah menambahkan **filter program studi** pada query `SELECT`.
+Pada `tugascnth1.php`, saya menambahkan kondisi `prodi = 'Teknik Informatika'` pada query `SELECT`.
 
-### Kode Sebelum Modifikasi
-
-```php
-WHERE ipk >= 3.50
-```
-
-Kode tersebut hanya menampilkan mahasiswa yang memiliki IPK minimal 3.50.
-
-### Kode Setelah Modifikasi
+Kode sebelum modifikasi:
 
 ```php
-WHERE ipk >= 3.50
-AND prodi = 'Teknik Informatika'
+$sqlSelect = "SELECT nim, nama, prodi, ipk
+              FROM mahasiswa
+              WHERE ipk >= 3.50
+              ORDER BY ipk DESC, nama ASC
+              LIMIT 10";
 ```
 
-Dengan modifikasi tersebut, program hanya menampilkan mahasiswa yang memiliki **IPK minimal 3.50** dan berasal dari **Teknik Informatika**.
+Kode setelah modifikasi:
 
-### Hasil Program
+```php
+$sqlSelect = "SELECT nim, nama, prodi, ipk
+              FROM mahasiswa
+              WHERE ipk >= 3.50
+              AND prodi = 'Teknik Informatika'
+              ORDER BY ipk DESC, nama ASC
+              LIMIT 10";
+```
+
+Dengan modifikasi tersebut, program hanya menampilkan mahasiswa yang memiliki IPK minimal 3.50 dan berasal dari Program Studi Teknik Informatika.
+
+Hasil yang ditampilkan:
 
 ```text
---- HASIL QUERY SELECT ---
 NIM  : 2026001
 Nama : Andi Pratama
 Prodi: Teknik Informatika
 IPK  : 3.75
 ```
 
-### Penjelasan 5 Bagian Kode Penting
+## Penjelasan 5 Bagian Kode Penting
 
-**1. `require_once 'koneksi.php'`**
+### 1. Menghubungkan File Koneksi
 
-Digunakan untuk menghubungkan program PHP dengan database MySQL melalui file `koneksi.php`.
+```php
+require_once 'koneksi.php';
+```
 
-**2. `mysqli_select_db($koneksi, 'akademik')`**
+Kode tersebut digunakan untuk memanggil file `koneksi.php` agar program dapat terhubung dengan database MySQL.
 
-Digunakan untuk memilih database `akademik` yang akan digunakan.
+### 2. Memilih Database
 
-**3. `INSERT IGNORE`**
+```php
+mysqli_select_db($koneksi, 'akademik');
+```
 
-Digunakan untuk memasukkan data mahasiswa ke dalam tabel `mahasiswa`. `INSERT IGNORE` mencegah error ketika data yang sama sudah terdapat di database.
+Kode tersebut digunakan untuk memilih database `akademik` yang akan digunakan oleh program.
 
-**4. Query `SELECT`**
+### 3. Menambahkan Data Mahasiswa
 
-Digunakan untuk mengambil data mahasiswa dengan kriteria IPK minimal 3.50 dan program studi Teknik Informatika.
+```php
+$sqlInsert = "INSERT IGNORE INTO mahasiswa (nim, nama, email, prodi, angkatan, ipk) VALUES
+('2026001', 'Andi Pratama', 'andi@example.ac.id', 'Teknik Informatika', 2025, 3.75),
+('2026002', 'Siti Rahma', 'siti@example.ac.id', 'Sistem Informasi', 2026, 3.80),
+('2026003', 'Budi Santoso', 'budi@example.ac.id', 'Teknik Informatika', 2025, 3.25),
+('2026004', 'Lina Permata', 'lina@example.ac.id', 'Sistem Informasi', 2026, 3.20);";
+```
 
-**5. `mysqli_fetch_assoc()`**
+Kode tersebut digunakan untuk memasukkan data mahasiswa ke dalam tabel `mahasiswa`. `INSERT IGNORE` digunakan agar data yang sudah ada tidak menyebabkan error duplikasi.
 
-Digunakan untuk mengambil data hasil query satu per satu dan menampilkannya ke layar.
+### 4. Menampilkan Data Berdasarkan Kondisi
 
-### Cara Menjalankan
+```php
+$sqlSelect = "SELECT nim, nama, prodi, ipk
+              FROM mahasiswa
+              WHERE ipk >= 3.50
+              AND prodi = 'Teknik Informatika'
+              ORDER BY ipk DESC, nama ASC
+              LIMIT 10";
+```
 
-Program dijalankan melalui Terminal VS Code menggunakan PHP dari XAMPP:
+Kode tersebut digunakan untuk mengambil data mahasiswa yang memiliki IPK minimal 3.50 dan berasal dari Teknik Informatika. Data kemudian diurutkan berdasarkan IPK terbesar dan nama secara alfabetis.
 
-```powershell
+### 5. Mengambil dan Menampilkan Hasil Query
+
+```php
+while ($row = mysqli_fetch_assoc($result)) {
+    echo "NIM  : " . $row['nim'] . "\n";
+    echo "Nama : " . $row['nama'] . "\n";
+    echo "Prodi: " . $row['prodi'] . "\n";
+    echo "IPK  : " . $row['ipk'] . "\n";
+}
+```
+
+Kode tersebut digunakan untuk mengambil hasil query satu per satu menggunakan `mysqli_fetch_assoc()` kemudian menampilkan NIM, nama, prodi, dan IPK mahasiswa.
+
+## Error yang Pernah Muncul
+
+### Error: PHP Tidak Dikenali di Terminal
+
+Saat pertama kali menjalankan program melalui Terminal VS Code menggunakan perintah:
+
+```text
+php -S localhost:8000
+```
+
+muncul pesan:
+
+```text
+php : The term 'php' is not recognized as the name of a cmdlet, function, script file, or operable program.
+```
+
+### Penyebab
+
+Error terjadi karena PHP dari XAMPP belum terdaftar pada `PATH` Windows sehingga perintah `php` tidak dapat langsung digunakan melalui Terminal VS Code.
+
+### Langkah Perbaikan
+
+Program dijalankan menggunakan lokasi PHP yang terdapat di XAMPP:
+
+```text
 C:\xampp\php\php.exe pertemuan4\tugascnth1.php
 ```
 
-MySQL pada XAMPP harus dalam keadaan **ON** agar program dapat terhubung dengan database.
+Dengan cara tersebut, file PHP dapat dijalankan langsung melalui Terminal VS Code tanpa menggunakan browser.
 
-### Kesimpulan
+## Screenshot
 
-Modifikasi pada `tugascnth1.php` berhasil menambahkan filter berdasarkan program studi. Program sekarang hanya menampilkan mahasiswa **Teknik Informatika dengan IPK minimal 3.50**.
+### Screenshot Sebelum Modifikasi
+
+<img width="1366" height="619" alt="Screenshot sebelum modifikasi" src="">
+
+### Screenshot Sesudah Modifikasi
+
+<img width="1366" height="619" alt="Screenshot sesudah modifikasi" src="">
