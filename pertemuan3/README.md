@@ -1,6 +1,3 @@
-<img width="1366" height="619" alt="WhatsApp Image 2026-10-05 at 11 07 21" src="https://github.com/user-attachments/assets/83c80c3f-4254-4acb-ab2b-a3c284258dbe" />
-<img width="1366" height="619" alt="WhatsApp Image 2026-10-05 at 11 07 21" src="https://github.com/user-attachments/assets/9b4853b4-459c-42ff-ab51-406f80e0176d" />
-<img width="1366" height="619" alt="WhatsApp Image 2026-10-05 at 11 07 21" src="https://github.com/user-attachments/assets/eb957859-eb55-48d6-9508-6caa719667e0" />
 # Tugas 3 Praktikum PBW
 
 ## Nama: Aufa Al Ghiyats Sulthan Priatmojo
@@ -134,7 +131,7 @@ Kemudian program dijalankan menggunakan URL localhost yang sesuai dengan struktu
 
 ### Screenshot Sebelum Modifikasi
 
-![Screenshot Sebelum](screenshots/sebelum.png)
+![Screenshot Sebelum]<img width="1366" height="619" alt="WhatsApp Image 2026-10-05 at 11 07 21" src="https://github.com/user-attachments/assets/83c80c3f-4254-4acb-ab2b-a3c284258dbe" />
 
 ### Screenshot Sesudah Modifikasi
 
