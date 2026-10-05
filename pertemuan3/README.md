@@ -135,4 +135,4 @@ Kemudian program dijalankan menggunakan URL localhost yang sesuai dengan struktu
 
 ### Screenshot Sesudah Modifikasi
 
-![Screenshot Sesudah](screenshots/sesudah.png)
+<img width="1365" height="632" alt="WhatsApp Image 2026-10-05 at 11 10 56" src="https://github.com/user-attachments/assets/79f02e29-7715-4ca8-aef4-99eb76b3d617" />
