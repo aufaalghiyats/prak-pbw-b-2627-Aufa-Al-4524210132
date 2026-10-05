@@ -131,7 +131,7 @@ Kemudian program dijalankan menggunakan URL localhost yang sesuai dengan struktu
 
 ### Screenshot Sebelum Modifikasi
 
-![Screenshot Sebelum]<img width="1366" height="619" alt="WhatsApp Image 2026-10-05 at 11 07 21" src="https://github.com/user-attachments/assets/83c80c3f-4254-4acb-ab2b-a3c284258dbe" />
+<img width="1366" height="619" alt="WhatsApp Image 2026-10-05 at 11 07 21" src="https://github.com/user-attachments/assets/83c80c3f-4254-4acb-ab2b-a3c284258dbe" />
 
 ### Screenshot Sesudah Modifikasi
 
