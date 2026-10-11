@@ -34,15 +34,19 @@ Fungsi `mysqli_prepare()`, `mysqli_stmt_bind_param()`, dan `mysqli_stmt_execute(
 
 ### Screenshot Sebelum Modifikasi
 
-Screenshot tampilan formulir asli sebelum dilakukan perubahan.
+![image alt]()
 
-![Screenshot Sebelum Modifikasi](screenshots/sebelum.png)
+![image alt]()
+
+![image alt]()
 
 ### Screenshot Sesudah Modifikasi
 
-Screenshot tampilan formulir setelah penambahan validasi dan perubahan pilihan program studi.
+![image alt]()
 
-![Screenshot Sesudah Modifikasi](screenshots/sesudah.png)
+![image alt]()
+
+![image alt]()
 
 ## 3. Error yang Pernah Muncul, Penyebab, dan Perbaikan
 
