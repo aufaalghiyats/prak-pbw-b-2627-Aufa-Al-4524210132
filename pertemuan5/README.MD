@@ -34,7 +34,7 @@ Fungsi `mysqli_prepare()`, `mysqli_stmt_bind_param()`, dan `mysqli_stmt_execute(
 
 ### Screenshot Sebelum Modifikasi
 
-![image alt]()
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/d4020ba0a2434fdf961336ee37b40c330d467115/pertemuan5/sebelum%20-%20form.php.png)
 
 ![image alt]()
 
