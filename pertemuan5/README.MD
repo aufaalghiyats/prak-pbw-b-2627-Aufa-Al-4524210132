@@ -42,11 +42,11 @@ Fungsi `mysqli_prepare()`, `mysqli_stmt_bind_param()`, dan `mysqli_stmt_execute(
 
 ### Screenshot Sesudah Modifikasi
 
-![image alt]()
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/aee4b4e5976ba21e804820fea580cc3afdbca04a/pertemuan5/sesudah%20-%20form.php.png)
 
-![image alt]()
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/aee4b4e5976ba21e804820fea580cc3afdbca04a/pertemuan5/sesudah%20-%20simpan.php.png)
 
-![image alt]()
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/aee4b4e5976ba21e804820fea580cc3afdbca04a/pertemuan5/sesudah%20-%20simpan.php%20database.png)
 
 ## 3. Error yang Pernah Muncul, Penyebab, dan Perbaikan
 
