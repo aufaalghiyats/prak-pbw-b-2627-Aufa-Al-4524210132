@@ -36,9 +36,9 @@ Fungsi `mysqli_prepare()`, `mysqli_stmt_bind_param()`, dan `mysqli_stmt_execute(
 
 ![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/d4020ba0a2434fdf961336ee37b40c330d467115/pertemuan5/sebelum%20-%20form.php.png)
 
-![image alt]()
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/4d960a2c78e7c7f073f7d467bffb7aefaa775dad/pertemuan5/sebelum%20-%20simpan.php.png)
 
-![image alt]()
+![image alt](https://github.com/aufaalghiyats/prak-pbw-b-2627-Aufa-Al-4524210132/blob/4d960a2c78e7c7f073f7d467bffb7aefaa775dad/pertemuan5/sebelum%20-%20simpan.php%20database.png)
 
 ### Screenshot Sesudah Modifikasi
 
