@@ -5,10 +5,10 @@
 ## Screenshot Hasil Program
 
 ### 1. Halaman Daftar Produk
-![Daftar Produk](assets/daftar-produk.png)
+![image alt]()
 
 ### 2. Form Tambah Produk
-![Tambah Produk](assets/tambah-produk.png)
+![image alt]()
 
 ### 3. Tampilan Database MySQL
-![Database](assets/database.png)
+![image alt]()
